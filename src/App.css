@@ -1,0 +1,786 @@
+.navbar {
+  background-color: #ffe04b;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.logo {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+}
+/* .active{
+  background-color: #f6f1f1;
+  padding: 5px;
+  border-radius: 5px;
+} */
+.home {
+  padding: 35px 30px;
+}
+
+.hero {
+  background-color: #f3f1f1;
+  padding: 35px 40px 40px;
+  margin-bottom: 35px;
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin: 0 0 25px;
+}
+
+.hero p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.search-box {
+  display: flex;
+  gap: 25px;
+}
+
+.search-box input {
+  flex: 1;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  padding: 0 15px;
+  font-size: 14px;
+}
+
+.search-box button {
+  width: 105px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffe04b;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.now-playing {
+  padding: 0 5px;
+}
+
+.now-playing h2 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 30px 20px;
+}
+
+.movie-card {
+  min-width: 0;
+}
+
+.movie-image {
+  position: relative;
+  height: 260px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.movie-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.movie-rating {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #17252b;
+  color: white;
+  border: 3px solid #16c784;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.more-button {
+  position: absolute;
+  padding-bottom: 7px;
+  top: 12px;
+  right: 12px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #555;
+}
+
+.movie-info {
+  position: relative;
+  padding: 12px 10px 0;
+}
+
+.movie-info h3 {
+  font-size: 17px;
+  margin: 0 0 5px;
+  line-height: 1.2;
+}
+
+.movie-info p {
+  margin: 0;
+  color: #777;
+  font-size: 16px;
+}
+.movie-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.movie-bottom p {
+  margin: 0;
+}
+
+.movie-bottom .heart {
+  margin: 0;
+}
+
+.heart {
+  position: absolute;
+  top: 17px;
+  right: -8px;
+  bottom: 0;
+  font-size: 35px;
+  color: red;
+  background: transparent;
+  border: none;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 45px;
+}
+
+.pagination button {
+  width: 35px;
+  height: 35px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.pagination .active {
+  background-color: #ffe04b;
+  border-radius: 5px;
+}
+
+.tv-shows,
+.search-page,
+.watchlist-page,
+.movie-details {
+  padding: 35px 30px;
+  box-sizing: border-box;
+}
+
+.tv-shows h1,
+.search-page h1,
+.watchlist-page h1 {
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.search-page .search-box {
+  max-width: 700px;
+  margin-bottom: 35px;
+}
+
+.search-page .search-box input {
+  border: 1px solid #ddd;
+}
+
+.movie-details .details-info {
+  display: flex;
+  gap: 30px;
+  background-color: #f8f9fa;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  align-items: flex-start;
+}
+
+.movie-details .details-info img {
+  width: 260px;
+  height: 390px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.movie-details .details-info h1 {
+  font-size: 32px;
+  margin: 0 0 10px 0;
+}
+
+.movie-details .details-info p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+.movie-details .recommendations,
+.movie-details .reviews {
+  margin-top: 40px;
+}
+
+.movie-details .recommendations h2,
+.movie-details .reviews h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ffe04b;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.movie-details .review {
+  background-color: #f3f1f1;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.movie-details .review h3 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  color: #111;
+}
+
+.movie-details .review p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.watchlist-page .movie-card {
+  position: relative;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.watchlist-page .movie-info button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 8px 0;
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 13px;
+  transition: background-color 0.2s;
+}
+
+.watchlist-page .movie-info button:hover {
+  background-color: #cc0000;
+}
+
+/* ==========================================================================
+   تنسيقات إضافية للصفحات: Watchlist, TVShows, TVDetails, Search, Details, AI
+   ========================================================================== */
+
+/* 1. التنسيق العام للحاويات الرئيسية للصفحات */
+.tv-shows,
+.search-page,
+.watchlist-page,
+.movie-details,
+.ai-assistant {
+  padding: 35px 30px;
+  box-sizing: border-box;
+}
+
+.tv-shows h1,
+.search-page h1,
+.watchlist-page h1,
+.ai-assistant h1 {
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+/* 2. صفحة البحث (Search) */
+.search-page .search-box {
+  max-width: 700px;
+  margin-bottom: 35px;
+}
+
+.search-page .search-box input {
+  border: 1px solid #ddd;
+}
+
+/* 3. تفاصيل الأفلام والمسلسلات (Details & TVDetails) */
+.movie-details .details-info {
+  display: flex;
+  gap: 30px;
+  background-color: #f8f9fa;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  align-items: flex-start;
+}
+
+.movie-details .details-info img {
+  width: 260px;
+  height: 390px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.movie-details .details-info h1 {
+  font-size: 32px;
+  margin: 0 0 10px 0;
+}
+
+.movie-details .details-info p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+.movie-details .recommendations,
+.movie-details .reviews {
+  margin-top: 40px;
+}
+
+.movie-details .recommendations h2,
+.movie-details .reviews h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ffe04b;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* قسم المراجعات (Reviews) */
+.movie-details .review {
+  background-color: #f3f1f1;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.movie-details .review h3 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  color: #111;
+}
+
+.movie-details .review p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* 4. قائمة الرغبات (Watchlist) */
+.watchlist-page .movie-card {
+  position: relative;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.watchlist-page .movie-info button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 8px 0;
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 13px;
+  transition: background-color 0.2s;
+}
+
+.watchlist-page .movie-info button:hover {
+  background-color: #cc0000;
+}
+
+.ai-assistant {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.chat-box {
+  background-color: #f8f9fa;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  height: 420px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.message {
+  max-width: 75%;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.message strong {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 4px;
+  opacity: 0.75;
+}
+
+.message p {
+  margin: 0;
+}
+
+.ai-message {
+  align-self: flex-start;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  color: #222;
+}
+
+.user-message {
+  align-self: flex-end;
+  background-color: #ffe04b;
+  color: #000;
+}
+
+.chat-input {
+  display: flex;
+  gap: 12px;
+}
+
+.chat-input input {
+  flex: 1;
+  height: 42px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0 15px;
+  font-size: 14px;
+  outline: none;
+}
+
+.chat-input input:focus {
+  border-color: #ffe04b;
+}
+
+.chat-input button {
+  width: 100px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffe04b;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.chat-input button:hover {
+  background-color: #f0cf33;
+}
+
+@media (max-width: 768px) {
+  .tv-shows,
+  .search-page,
+  .watchlist-page,
+  .movie-details,
+  .ai-assistant {
+    padding: 20px;
+  }
+
+  .movie-details .details-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .movie-details .details-info img {
+    width: 200px;
+    height: 300px;
+  }
+
+  .message {
+    max-width: 85%;
+  }
+}
+
+@media (max-width: 480px) {
+  .tv-shows,
+  .search-page,
+  .watchlist-page,
+  .movie-details,
+  .ai-assistant {
+    padding: 15px;
+  }
+
+  .movie-details .details-info img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+  }
+
+  .chat-box {
+    height: 350px;
+    padding: 15px;
+  }
+
+  .chat-input {
+    flex-direction: column;
+  }
+
+  .chat-input button {
+    width: 100%;
+    height: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tv-shows,
+  .search-page,
+  .watchlist-page,
+  .movie-details {
+    padding: 20px;
+  }
+
+  .movie-details .details-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .movie-details .details-info img {
+    width: 200px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tv-shows,
+  .search-page,
+  .watchlist-page,
+  .movie-details {
+    padding: 15px;
+  }
+
+  .movie-details .details-info img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .movies-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px 15px;
+  }
+
+  .movie-image {
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    height: auto;
+    min-height: 55px;
+    padding: 15px 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px 18px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  .home {
+    padding: 10px 20px 30px;
+  }
+
+  .hero {
+    padding: 25px 20px 30px;
+    margin-bottom: 40px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .search-box {
+    gap: 10px;
+  }
+
+  .search-box button {
+    width: 90px;
+  }
+
+  .now-playing {
+    padding: 0;
+  }
+
+  .now-playing h2 {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  .movies-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px 15px;
+  }
+
+  .movie-image {
+    height: 240px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 15px;
+  }
+
+  .logo {
+    font-size: 17px;
+  }
+
+  .nav-links {
+    gap: 10px 14px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+
+  .home {
+    padding: 10px 15px 30px;
+  }
+
+  .hero {
+    padding: 20px 15px 25px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .hero p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .search-box {
+    flex-direction: column;
+  }
+
+  .search-box input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .search-box button {
+    width: 100%;
+    height: 40px;
+  }
+
+  .now-playing h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+
+  .movies-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px 12px;
+  }
+
+  .movie-image {
+    height: 230px;
+  }
+
+  .movie-info {
+    padding: 10px 5px 0;
+  }
+
+  .movie-info h3 {
+    font-size: 15px;
+  }
+
+  .movie-info p {
+    font-size: 14px;
+  }
+
+  .heart {
+    font-size: 22px;
+  }
+
+  .movie-rating {
+    width: 38px;
+    height: 38px;
+    font-size: 11px;
+  }
+}
