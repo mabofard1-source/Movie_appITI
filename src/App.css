@@ -27,6 +27,10 @@
   font-weight: bold;
 }
 
+.navbar .logo:hover {
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+}
+
 .nav-links {
   display: flex;
   align-items: center;
