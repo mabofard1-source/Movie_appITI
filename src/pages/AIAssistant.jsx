@@ -1,9 +1,7 @@
 import { GoogleGenAI } from "@google/genai";
 import { useState } from "react";
 
-const ai = new GoogleGenAI({
-  apiKey: import.meta.env.VITE_GIMINI_API,
-});
+const apiKey = import.meta.env.VITE_GIMINI_API;
 
 function AIAssistant() {
   let [messages, setMessages] = useState([
@@ -18,6 +16,11 @@ function AIAssistant() {
   let [loading, setLoading] = useState(false);
 
   async function getAnswer(currentMessages) {
+    if (!apiKey) {
+      throw new Error("The AI assistant is unavailable because its API key is not configured.");
+    }
+
+    const ai = new GoogleGenAI({ apiKey });
     const contents = currentMessages.map(function (message) {
       return {
         role: message.role === "assistant" ? "model" : "user",
