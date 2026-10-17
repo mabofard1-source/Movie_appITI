@@ -7,6 +7,19 @@
   padding: 0 30px;
 }
 
+.navbar a {
+  display: inline-block;
+  padding: 6px 8px;
+  border-radius: 8px;
+  transition: box-shadow 0.2s ease, transform 0.2s ease, background-color 0.2s ease;
+}
+
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+  transform: translateY(-2px);
+}
+
 .logo {
   color: black;
   text-decoration: none;
