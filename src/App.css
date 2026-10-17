@@ -90,6 +90,12 @@
 
 .movie-card {
   min-width: 0;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.movie-card:hover {
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.18);
+  transform: translateY(-4px);
 }
 
 .movie-image {
